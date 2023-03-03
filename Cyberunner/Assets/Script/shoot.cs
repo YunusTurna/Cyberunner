@@ -10,11 +10,12 @@ public class shoot : MonoBehaviour
     void Start()
     {
         
-        speed = 300;
+        speed = 20;
     }
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position,Shuriken_Controller.mousePos,speed);
+        target =Camera.main.ScreenToViewportPoint(Input.mousePosition);
+        transform.position = Vector2.MoveTowards(transform.position, target ,speed);
         Destroy(gameObject, 5f);
     }
 

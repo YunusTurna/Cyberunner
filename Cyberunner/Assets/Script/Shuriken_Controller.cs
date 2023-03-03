@@ -15,7 +15,7 @@ public class Shuriken_Controller : MonoBehaviour
     void Start()
     {
         canThrowShurien = true;
-        shskilltime = 6;
+        shskilltime = 1;
     }
 
     void Update()
