@@ -9,7 +9,7 @@ public class Shuriken_Controller : MonoBehaviour
     public int shskilltime;
     public GameObject shuriken;
     public AudioSource bulletVoice;
-    private Vector3 mousePos;
+    public static Vector2 mousePos;
     public float offSet;
 
     void Start()
@@ -20,13 +20,7 @@ public class Shuriken_Controller : MonoBehaviour
 
     void Update()
     {
-        mousePos = Camera.main.ScreenToWorldPoint(new Vector3(
-            Input.mousePosition.x,
-            Input.mousePosition.y,
-            transform.position.z
-       
-            
-            ));
+        mousePos = Camera.main.ScreenToWorldPoint(new Vector2(Input.mousePosition.x,Input.mousePosition.y));
 
 
        
