@@ -11,10 +11,8 @@ GameObject:
   - component: {fileID: 3593567026612154321}
   - component: {fileID: 4966373225338888746}
   - component: {fileID: 1134410877}
-  - component: {fileID: 1134410876}
   - component: {fileID: 5503070038474865836}
   - component: {fileID: 6322198075505201024}
-  - component: {fileID: 940612075258407636}
   m_Layer: 0
   m_Name: Shrouiken
   m_TagString: Shrouiken
@@ -77,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: -1911769180, guid: c2c4b9c43a2a33944972b65245602d2e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -109,18 +107,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1134410876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6591520373006533542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cbd2a96f2f31c24ba985d8b04190cdb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &5503070038474865836
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -131,7 +117,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.0013942719, y: -0.001394093}
@@ -158,16 +144,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &940612075258407636
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6591520373006533542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb63611a90b828f4db953dfb7c158a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 15

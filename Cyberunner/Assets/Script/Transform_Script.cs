@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShruikenRotation : MonoBehaviour
-{
-    
+
+
+
+public class Transform_Script : MonoBehaviour
+{public PlayerMovement player;
+    // Start is called before the first frame update
     void Start()
     {
         
@@ -13,6 +16,6 @@ public class ShruikenRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       transform.Rotate(0.0f, 0.0f, transform.rotation.z + 120, Space.Self);
+        transform.position = player.transform.position;
     }
 }
