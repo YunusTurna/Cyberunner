@@ -468,7 +468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c06751b612565a42ba2f8a16d014ee0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crosshairs: {fileID: 1925461339}
+  Crosshair: {fileID: 1925461341}
   player: {fileID: 1908291899}
   bulletPrefab: {fileID: 6591520373006533542, guid: 0b916da680c6aa04bba1528b089c38f2, type: 3}
   bulletStart: {fileID: 1908291899}
@@ -618,6 +618,7 @@ GameObject:
   - component: {fileID: 1908291900}
   - component: {fileID: 1908291903}
   - component: {fileID: 1908291902}
+  - component: {fileID: 1908291904}
   m_Layer: 0
   m_Name: Shot
   m_TagString: Untagged
@@ -688,6 +689,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1908291904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908291899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c67eb25ca2c8ffb4caecfc1e16e16efd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!1 &1925461339
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,8 +779,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1925461339}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -14.7, y: 3.71, z: 0}
+  m_LocalScale: {x: 4.7066, y: 4.7066, z: 4.7066}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
