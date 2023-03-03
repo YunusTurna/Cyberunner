@@ -9,11 +9,7 @@ public class Shuriken_Script : MonoBehaviour
     public GameObject player;
     public GameObject bulletPrefab;
     public GameObject bulletStart;
-<<<<<<< Updated upstream
     public float bulletSpeed = 60.0f;
-=======
-    public float bulletSpeed = 1.0f;
->>>>>>> Stashed changes
 
     private Vector3 target;
 
