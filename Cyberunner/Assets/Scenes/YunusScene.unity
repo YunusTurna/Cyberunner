@@ -323,51 +323,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &181771022
+--- !u!1 &181771022 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4750341184642549390, guid: 804fc47135cd1844dbb65f8013dc71e9, type: 3}
+  m_PrefabInstance: {fileID: 4750341184538451328}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 181771023}
-  - component: {fileID: 181771024}
-  m_Layer: 0
-  m_Name: ShurikenLauncher
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &181771023
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181771022}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.047, y: -0.044, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1949250880}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &181771024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 181771022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c67eb25ca2c8ffb4caecfc1e16e16efd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1949250882}
 --- !u!1 &202620290
 GameObject:
   m_ObjectHideFlags: 0
@@ -19441,29 +19401,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1949250878
+--- !u!1 &1949250878 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 4750341185950558398, guid: 804fc47135cd1844dbb65f8013dc71e9, type: 3}
+  m_PrefabInstance: {fileID: 4750341184538451328}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1949250880}
-  - component: {fileID: 1949250879}
-  - component: {fileID: 1949250883}
-  - component: {fileID: 1949250882}
-  - component: {fileID: 1949250881}
-  m_Layer: 0
-  m_Name: Player
-  m_TagString: Player
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!212 &1949250879
-SpriteRenderer:
+--- !u!1001 &3698421918832422850
+PrefabInstance:
   m_ObjectHideFlags: 0
+<<<<<<< Updated upstream:Cyberunner/Assets/Scenes/SampleScene.unity
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -19552,12 +19498,66 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
+=======
+>>>>>>> Stashed changes:Cyberunner/Assets/Scenes/YunusScene.unity
   serializedVersion: 2
-  m_Size: {x: 0.16221493, y: 0.38211644}
-  m_EdgeRadius: 0
---- !u!114 &1949250882
-MonoBehaviour:
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3698421917980611057, guid: 05b88f5b2223e7e4c8ed37372a3300c3, type: 3}
+      propertyPath: m_Name
+      value: Wizard
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698421917980611060, guid: 05b88f5b2223e7e4c8ed37372a3300c3, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698421917980611060, guid: 05b88f5b2223e7e4c8ed37372a3300c3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12.3843
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698421917980611060, guid: 05b88f5b2223e7e4c8ed37372a3300c3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.877
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698421917980611060, guid: 05b88f5b2223e7e4c8ed37372a3300c3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698421917980611060, guid: 05b88f5b2223e7e4c8ed37372a3300c3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698421917980611060, guid: 05b88f5b2223e7e4c8ed37372a3300c3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698421917980611060, guid: 05b88f5b2223e7e4c8ed37372a3300c3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698421917980611060, guid: 05b88f5b2223e7e4c8ed37372a3300c3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698421917980611060, guid: 05b88f5b2223e7e4c8ed37372a3300c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698421917980611060, guid: 05b88f5b2223e7e4c8ed37372a3300c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698421917980611060, guid: 05b88f5b2223e7e4c8ed37372a3300c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 05b88f5b2223e7e4c8ed37372a3300c3, type: 3}
+--- !u!1001 &4750341184538451328
+PrefabInstance:
   m_ObjectHideFlags: 0
+<<<<<<< Updated upstream:Cyberunner/Assets/Scenes/SampleScene.unity
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -19592,3 +19592,59 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+=======
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4750341185950558398, guid: 804fc47135cd1844dbb65f8013dc71e9, type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750341185950558400, guid: 804fc47135cd1844dbb65f8013dc71e9, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750341185950558400, guid: 804fc47135cd1844dbb65f8013dc71e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750341185950558400, guid: 804fc47135cd1844dbb65f8013dc71e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750341185950558400, guid: 804fc47135cd1844dbb65f8013dc71e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750341185950558400, guid: 804fc47135cd1844dbb65f8013dc71e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750341185950558400, guid: 804fc47135cd1844dbb65f8013dc71e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750341185950558400, guid: 804fc47135cd1844dbb65f8013dc71e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750341185950558400, guid: 804fc47135cd1844dbb65f8013dc71e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750341185950558400, guid: 804fc47135cd1844dbb65f8013dc71e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750341185950558400, guid: 804fc47135cd1844dbb65f8013dc71e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750341185950558400, guid: 804fc47135cd1844dbb65f8013dc71e9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 804fc47135cd1844dbb65f8013dc71e9, type: 3}
+>>>>>>> Stashed changes:Cyberunner/Assets/Scenes/YunusScene.unity
