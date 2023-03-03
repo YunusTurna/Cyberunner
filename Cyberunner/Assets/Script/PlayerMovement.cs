@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+
+ 
+
+
+
     Rigidbody2D rb;
     SpriteRenderer sr;
     private int jumpCounter;
     private bool dashBool = true;
-
     [SerializeField] private float speed;
     [SerializeField] private float jumpPower;
     [SerializeField] private float dashPower;
@@ -32,7 +36,6 @@ public class PlayerMovement : MonoBehaviour
        Jump();
        SpriteFlip();
        StartCoroutine(Dash());
-
     }
     void Jump(){
         if(Input.GetKeyDown(KeyCode.Space) & jumpCounter > 0)
