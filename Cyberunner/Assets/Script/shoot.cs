@@ -18,7 +18,8 @@ public class shoot : MonoBehaviour
             transform.position,
             target,
             speed * Time.deltaTime
-        );
+        //debug.log
+            );
 
         Destroy(gameObject, 5f);
     }

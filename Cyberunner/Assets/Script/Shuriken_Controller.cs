@@ -6,7 +6,6 @@ public class Shuriken_Controller : MonoBehaviour
 {
     public bool canThrowShurien;
     public PlayerMovement player;
-    //public Shuriken_Controller shurikken;
     public int shskilltime;
     public GameObject shuriken;
     public AudioSource bulletVoice;
