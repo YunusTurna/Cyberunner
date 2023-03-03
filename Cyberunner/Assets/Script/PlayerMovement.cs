@@ -21,9 +21,9 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
-        speed = 20;
+        speed = 10;
         dashCoolDown = 3;
-        jumpPower = 400;
+        jumpPower = 500;
         dashPower = 200;
 
         
