@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class Wizard : MonoBehaviour
 {
+
+    Animator anim;
     [SerializeField] GameObject player;
     [SerializeField] GameObject fireBall;
     [SerializeField] GameObject wizard;
@@ -18,7 +20,10 @@ public class Wizard : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("Attack" , 1 , 1);
+        anim = GetComponent<Animator>();
+        InvokeRepeating("Attack" , 0 , 2);
+   
+    
     }
    
 
@@ -48,9 +53,13 @@ public class Wizard : MonoBehaviour
     {
         if(attack == true)
         {
-        Instantiate(fireBall , transform.position , Quaternion.Euler(0,0,0));
+            anim.SetBool("IsAttack", true);
+            Instantiate(fireBall , transform.position , Quaternion.Euler(0,0,0));
+ }
+        else
+        {
+            anim.SetBool("IsAttack", false);
         }
-
     }
    
 }
