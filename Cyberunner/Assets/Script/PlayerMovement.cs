@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public bool onMove;
     Animator anim;
     Rigidbody2D rb;
+    public static bool grounded;
    public static SpriteRenderer  sr;
     private int jumpCounter;
     private bool dashBool = true;
@@ -70,7 +71,9 @@ public class PlayerMovement : MonoBehaviour
         if(other.gameObject.tag == "Ground")
         {
             jumpCounter = 1;
+            
         }
+        
         
     }
     IEnumerator Dash()
