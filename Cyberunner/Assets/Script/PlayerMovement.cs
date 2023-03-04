@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public bool onMove;
     Animator anim;
     Rigidbody2D rb;
-    SpriteRenderer sr;
+   public static SpriteRenderer  sr;
     private int jumpCounter;
     private bool dashBool = true;
     [SerializeField] private float speed;

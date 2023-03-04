@@ -314,3 +314,4 @@ MonoBehaviour:
   player: {fileID: 0}
   fireBall: {fileID: 8505430058023050895, guid: 9881e743a9a969243850f959969401b3, type: 3}
   wizard: {fileID: 5918408976410680826}
+  coin: {fileID: 1398314836044079679, guid: a7e472dd7ad5fb141ae888ae96d2b82c, type: 3}

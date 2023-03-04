@@ -17,7 +17,7 @@ public class WizardDead : MonoBehaviour
        
     }
     private void OnTriggerEnter2D(Collider2D other) {
-        if(other.gameObject.tag == "Shrouiken")
+        if((other.gameObject.tag == "Shrouiken")||(other.gameObject.tag == "PlayerAttack"))
         {
              dead = true;
 
