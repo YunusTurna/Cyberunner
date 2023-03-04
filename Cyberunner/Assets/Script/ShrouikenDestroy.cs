@@ -15,4 +15,14 @@ public class ShrouikenDestroy : MonoBehaviour
     {
         Destroy(gameObject , 3f);
     }
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.tag == "Ground")
+        {
+            gameObject.transform.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
+            Debug.Log("Çarptı");
+            
+        }
+        
+    }
 }

@@ -12,12 +12,18 @@ public class Shuriken_Script : MonoBehaviour
     public float bulletSpeed = 60.0f;
 
     private Vector3 target;
+    private Vector3 difference;
+    private Vector3 distance;
+
+    private float rotationZ;
+    private bool throwBool = false;
 
     // Use this for initialization
     void Start()
     {
         cameraa = GetComponent<Camera>();
         Cursor.visible = false;
+        InvokeRepeating("Throw" , 0 , 2);
     }
 
     // Update is called once per frame
@@ -35,10 +41,14 @@ public class Shuriken_Script : MonoBehaviour
 
         if (Input.GetMouseButtonDown(1))
         {
+            if(throwBool == true)
+            {
             float distance = difference.magnitude;
             Vector2 direction = difference / distance;
             direction.Normalize();
             fireBullet(direction, rotationZ);
+            throwBool = false;
+            }
         }
     }
     void fireBullet(Vector2 direction, float rotationZ)
@@ -47,5 +57,12 @@ public class Shuriken_Script : MonoBehaviour
         b.transform.position = bulletStart.transform.position;
         b.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
         b.GetComponent<Rigidbody2D>().velocity = direction * bulletSpeed;
+    }
+
+    void Throw()
+    {
+        throwBool = true;
+        
+
     }
 }
