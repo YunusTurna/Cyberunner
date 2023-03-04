@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 80623966}
   - component: {fileID: 80623968}
   - component: {fileID: 80623967}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlayerDetect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ GameObject:
   - component: {fileID: 1983897318}
   - component: {fileID: 1983897317}
   - component: {fileID: 1983897316}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WizardDeath
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 5918408976410680829}
   - component: {fileID: 5918408976410680828}
   - component: {fileID: 5918408976410680831}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wizard
   m_TagString: Untagged
   m_Icon: {fileID: 0}

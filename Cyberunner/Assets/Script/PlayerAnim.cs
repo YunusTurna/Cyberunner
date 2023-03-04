@@ -19,14 +19,15 @@ public class PlayerAnim : MonoBehaviour
         else{
             anim.SetBool("Run" , false);
         }
-        if(Input.GetKeyDown(KeyCode.Mouse0)){
-            anim.SetBool("Attack" , true);
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            anim.SetBool("Attack", true);
         }
         else
         {
             anim.SetBool("Attack", false);
 
         }
-       
+
     }
 }
