@@ -36,6 +36,11 @@ public class PlayerMovement : MonoBehaviour
        Jump();
        SpriteFlip();
        StartCoroutine(Dash());
+
+
+
+    
+    
     }
     void Jump(){
         if(Input.GetKeyDown(KeyCode.Space) & jumpCounter > 0)
@@ -48,9 +53,9 @@ public class PlayerMovement : MonoBehaviour
     
     void Movement()
     {
-        onMove = true;
+       
         transform.Translate(new Vector3(speed * Input.GetAxisRaw("Horizontal") * Time.deltaTime, 0 , 0));
-        onMove = false;
+        
     }
     void SpriteFlip(){
         if(Input.GetAxisRaw("Horizontal") < 0){
