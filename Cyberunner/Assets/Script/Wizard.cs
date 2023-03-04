@@ -17,6 +17,9 @@ public class Wizard : MonoBehaviour
     
     
     
+    
+    
+    
 
     void Start()
     {
@@ -44,6 +47,10 @@ public class Wizard : MonoBehaviour
             scale.x = Mathf.Abs(scale.x);
         }
         transform.localScale = scale;
+        if(WizardDead.dead == true)
+        {
+            Destroy(gameObject);
+        }
 }
 
 
@@ -55,7 +62,7 @@ public class Wizard : MonoBehaviour
         {
             anim.SetBool("IsAttack", true);
             Instantiate(fireBall , transform.position , Quaternion.Euler(0,0,0));
- }
+        }
         else
         {
             anim.SetBool("IsAttack", false);
