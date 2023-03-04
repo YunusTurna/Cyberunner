@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         speed = 10;
         dashCoolDown = 3;
-        jumpPower = 500;
+        jumpPower = 3000;
         dashPower = 200;
 
         

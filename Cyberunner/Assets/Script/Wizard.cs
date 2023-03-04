@@ -18,17 +18,32 @@ public class Wizard : MonoBehaviour
 
     void Start()
     {
-        InvokeRepeating("Attack" , 0 , 2);
+        InvokeRepeating("Attack" , 1 , 1);
     }
-    void Update()
-    {
+   
+
+
+
+        private void Update()
+        {
+            Vector3 scale = transform.localScale;
+            if (player.transform.position.x > transform.position.x)
+        {
+            scale.x = Mathf.Abs(scale.x) * -1;
         
         
-      
-       
-      
-      
-    }
+        }
+         else
+        {
+
+            scale.x = Mathf.Abs(scale.x);
+        }
+        transform.localScale = scale;
+}
+
+
+
+    
     void Attack()
     {
         if(attack == true)
