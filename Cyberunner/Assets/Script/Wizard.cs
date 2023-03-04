@@ -10,6 +10,7 @@ public class Wizard : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] GameObject fireBall;
     [SerializeField] GameObject wizard;
+    [SerializeField] GameObject coin;
     
     public static bool attack = false;
     public static bool isLeft = false;
@@ -50,6 +51,8 @@ public class Wizard : MonoBehaviour
         if(WizardDead.dead == true)
         {
             Destroy(gameObject);
+            Instantiate(coin , transform.position , Quaternion.Euler(0,0,0));
+            
         }
 }
 
