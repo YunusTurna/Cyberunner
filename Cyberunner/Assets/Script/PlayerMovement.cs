@@ -5,10 +5,10 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 
- 
 
 
-
+    public bool onMove;
+    Animator anim;
     Rigidbody2D rb;
     SpriteRenderer sr;
     private int jumpCounter;
@@ -48,9 +48,9 @@ public class PlayerMovement : MonoBehaviour
     
     void Movement()
     {
+        onMove = true;
         transform.Translate(new Vector3(speed * Input.GetAxisRaw("Horizontal") * Time.deltaTime, 0 , 0));
-        
-        
+        onMove = false;
     }
     void SpriteFlip(){
         if(Input.GetAxisRaw("Horizontal") < 0){
