@@ -13,7 +13,7 @@ public class ShrouikenDestroy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Destroy(gameObject , 3f);
+        Destroy(gameObject , 0.3f);
     }
     private void OnCollisionEnter2D(Collision2D other)
     {
