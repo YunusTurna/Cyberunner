@@ -14,6 +14,7 @@ public class Shuriken_Script : MonoBehaviour
     private Vector3 target;
     private Vector3 difference;
     private Vector3 distance;
+    public static float shurikenwait = 6;
 
     private float rotationZ;
     private bool throwBool = false;
@@ -21,9 +22,10 @@ public class Shuriken_Script : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
         cameraa = GetComponent<Camera>();
         Cursor.visible = false;
-        InvokeRepeating("Throw" , 0 , 2);
+        InvokeRepeating("Throw" , 0 , shurikenwait);
     }
 
     // Update is called once per frame
