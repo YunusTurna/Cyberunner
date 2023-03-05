@@ -19,7 +19,11 @@ public class Button : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Coin.coinCounter > 200)
+        {
+
+        }
+
     }
     public void Jump()
     {
@@ -82,13 +86,21 @@ public class Button : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
         Time.timeScale = 1;
     }
+
+    
     public void Revive()
     {
-        deadScene.SetActive(false);
+        
+        if (Coin.coinCounter >= 300)
+        {
+            deadScene.SetActive(false);
         world.SetActive(true);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1;
         PlayerAnim.destroy = false;
+            Coin.coinCounter = Coin.coinCounter - 300;
+        }
+       
     }
 
 }
