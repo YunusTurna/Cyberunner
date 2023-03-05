@@ -104,5 +104,19 @@ public class Button : MonoBehaviour
         }
        
     }
-
+    public void volkan()
+    {
+        SceneManager.LoadScene("cr1");
+        
+    }
+    public void cave()
+    {
+        SceneManager.LoadScene("cr2");
+        
+    }
+    public void cyber()
+    {
+        SceneManager.LoadScene("cr3");
+        
+    }
 }

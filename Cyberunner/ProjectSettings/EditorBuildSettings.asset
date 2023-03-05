@@ -4,5 +4,29 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/cr1.unity
+    guid: 75a3a2f7ac4b47049badde00e0d37ac4
+  - enabled: 1
+    path: Assets/Scenes/Volcano.unity
+    guid: 5ebacf18f87f7474ea28d9ed97dc1e6a
+  - enabled: 1
+    path: Assets/Scenes/cr2.unity
+    guid: 1df1090fdb9b03848b7ab1bc6be3ccf7
+  - enabled: 1
+    path: Assets/Scenes/Cave.unity
+    guid: 63dc8ef866f109b44bee8ecb864cbd4c
+  - enabled: 1
+    path: Assets/Scenes/cr3.unity
+    guid: 3c0b48dd683892f499cfdd7d3d06600b
+  - enabled: 1
+    path: Assets/Scenes/CyberPunk.unity
+    guid: f341a22ffeed6f54a9d270e8ce1ebf9b
+  - enabled: 1
+    path: Assets/Scenes/cr4.unity
+    guid: 80bb733a5825f1b4392efa22194202c8
   m_configObjects: {}
