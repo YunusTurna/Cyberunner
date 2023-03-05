@@ -14,8 +14,8 @@ public class PlayerMovement : MonoBehaviour
    public static SpriteRenderer  sr;
     private int jumpCounter;
     private bool dashBool = true;
-    [SerializeField] private float speed;
-    [SerializeField] private float jumpPower;
+    [SerializeField] public static float speed;
+    [SerializeField] public static float jumpPower;
     [SerializeField] private float dashPower;
     [SerializeField] private int dashCoolDown;
     void Start()
