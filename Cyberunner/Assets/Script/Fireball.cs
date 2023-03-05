@@ -34,6 +34,11 @@ public class Fireball : MonoBehaviour
             DestroyProjectile();
         }
 
+        if (other.CompareTag("Ground"))
+        {
+            DestroyProjectile();
+        }
+
         void DestroyProjectile()
         {
             Destroy(gameObject);

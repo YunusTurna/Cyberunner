@@ -96,7 +96,7 @@ public class Wizard : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if ((other.gameObject.tag == "Shrouiken") || (other.gameObject.tag == "PlayerAttack"))
+        if ((other.gameObject.tag == "Shrouiken"))
         {
             Destroy(wizard);
             Instantiate(coin, transform.position, Quaternion.Euler(0, 0, 0));

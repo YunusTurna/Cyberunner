@@ -87,4 +87,15 @@ public class Enemy : MonoBehaviour
   
     
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if ((other.gameObject.tag == "Shrouiken") || (other.gameObject.tag == "PlayerAttack"))
+        {
+            Destroy(gameObject);
+            Instantiate(coin, transform.position, Quaternion.Euler(0, 0, 0));
+
+        }
+
+    }
 }

@@ -23,6 +23,12 @@ public class ShrouikenDestroy : MonoBehaviour
             Debug.Log("Çarptı");
             
         }
-        
+
+        if (other.gameObject.tag == "Fireball")
+        {
+            Destroy(gameObject);
+
+        }
+
     }
 }
