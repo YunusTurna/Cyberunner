@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2125132432}
   - component: {fileID: 2125132431}
   - component: {fileID: 2125132430}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerAttack
   m_TagString: PlayerAttack
   m_Icon: {fileID: 0}
@@ -100,7 +100,8 @@ GameObject:
   - component: {fileID: 336844696}
   - component: {fileID: 336844694}
   - component: {fileID: 336844695}
-  m_Layer: 0
+  - component: {fileID: 226483631}
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -228,8 +229,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onMove: 0
-  speed: 0
-  jumpPower: 0
   dashPower: 0
   dashCoolDown: 0
 --- !u!61 &474063327644483874
@@ -245,7 +244,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.1589961, y: 0.082650304}
+  m_Offset: {x: -0.058752626, y: -0.077064276}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -256,7 +255,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9385192, y: 2.5564983}
+  m_Size: {x: 0.80945903, y: 2.2370691}
   m_EdgeRadius: 0
 --- !u!114 &1949250891
 MonoBehaviour:
@@ -347,6 +346,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3adaba55aba27fd4cba5063a7a5ebdaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &226483631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474063327644483933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59a562885fb588b4ab138a24c3130c68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  keys: 0
 --- !u!1 &474063328020311917
 GameObject:
   m_ObjectHideFlags: 0
@@ -357,7 +369,7 @@ GameObject:
   m_Component:
   - component: {fileID: 474063328020311916}
   - component: {fileID: 474063328020311923}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: ShurikenLauncher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -372,7 +384,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 474063328020311917}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.047, y: -0.044, z: 0}
+  m_LocalPosition: {x: 0.047, y: 1.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -401,7 +413,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8772189082016271775}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: AttackPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
