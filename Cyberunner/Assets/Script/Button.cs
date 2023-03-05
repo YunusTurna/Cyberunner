@@ -86,7 +86,7 @@ public class Button : MonoBehaviour
     {
         deadScene.SetActive(false);
         world.SetActive(true);
-        GameObject.FindGameObjectWithTag("Player").transform.position = new Vector3(spawnPosition.transform.position.x, spawnPosition.transform.position.y , spawnPosition.transform.position.y);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1;
         PlayerAnim.destroy = false;
     }
