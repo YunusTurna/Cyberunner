@@ -25,7 +25,7 @@ public class PlayerAttack : MonoBehaviour
     IEnumerator AttackLeft()
     {
      playerAttackLeft.SetActive(true);
-     yield return new WaitForSeconds(1);
+     yield return new WaitForSeconds(0.1f);
      playerAttackLeft.SetActive(false);   
 
     }
