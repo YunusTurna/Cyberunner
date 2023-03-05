@@ -54,9 +54,13 @@ public class Button : MonoBehaviour
     }
     public void Sound()
     {
-        {
+        
             au.mute = !au.mute;
-        }
+        
+    }
+    public void FullScreen()
+    {
+        Screen.fullScreen = !Screen.fullScreen;
     }
 
 }

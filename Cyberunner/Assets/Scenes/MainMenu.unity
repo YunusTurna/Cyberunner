@@ -141,7 +141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &155430786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -668,8 +668,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -224.9838, y: 22.8}
-  m_SizeDelta: {x: 185.4324, y: 39.8163}
+  m_AnchoredPosition: {x: -235.12, y: 14.693}
+  m_SizeDelta: {x: 157.27, y: 29.386}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &454843430
 MonoBehaviour:
@@ -816,8 +816,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -223.63, y: -152.8}
-  m_SizeDelta: {x: 182.73, y: 36.8681}
+  m_AnchoredPosition: {x: -235.74, y: -127.34632}
+  m_SizeDelta: {x: 158.51, y: 31.4661}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &650803914
 MonoBehaviour:
@@ -964,8 +964,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -223.63, y: -67.9}
-  m_SizeDelta: {x: 182.73, y: 41.6565}
+  m_AnchoredPosition: {x: -235.74066, y: -54.315395}
+  m_SizeDelta: {x: 158.5087, y: 30.2873}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &838277303
 MonoBehaviour:
@@ -1160,7 +1160,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1170,10 +1170,10 @@ MonoBehaviour:
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
+    m_HighlightedSprite: {fileID: 1351964793, guid: e302f129168a9ae44a084193e3d49aab, type: 3}
+    m_PressedSprite: {fileID: 1351964793, guid: e302f129168a9ae44a084193e3d49aab, type: 3}
+    m_SelectedSprite: {fileID: 999843936, guid: f1dee16b8366c2e41aa695e494d99ea4, type: 3}
+    m_DisabledSprite: {fileID: 999843936, guid: f1dee16b8366c2e41aa695e494d99ea4, type: 3}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
     m_HighlightedTrigger: Highlighted
@@ -1184,7 +1184,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1117072432}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1117072430}
+        m_TargetAssemblyTypeName: Button, Assembly-CSharp
+        m_MethodName: FullScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1117072432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1205,8 +1217,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 999843936, guid: f1dee16b8366c2e41aa695e494d99ea4, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1241,7 +1253,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1127974323
 MonoBehaviour:
   m_ObjectHideFlags: 0

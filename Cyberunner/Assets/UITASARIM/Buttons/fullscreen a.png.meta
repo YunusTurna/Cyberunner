@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 73e101a2bb014d94fbdacefe06e2abdd
+guid: e302f129168a9ae44a084193e3d49aab
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -52,7 +52,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: 0
+  spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: exit 1_0
+      name: fullscreen a_0
       rect:
         serializedVersion: 2
         x: 44
@@ -137,56 +137,52 @@ TextureImporter:
         width: 436
         height: 84
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7001949a11ecae4da3ba9b3f4fa351c
-      internalID: -1585730642
+      spriteID: dcc39b95215c3ea4e8583fbe40eb8bff
+      internalID: 1351964793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: exit 1_1
+      name: fullscreen a_1
       rect:
         serializedVersion: 2
-        x: 398
+        x: 394
         y: 148
-        width: 82
-        height: 84
+        width: 86
+        height: 80
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51c1c3bbaca753f4a89bf4590929b766
-      internalID: 33842049
+      spriteID: bfce3a56d2ee59844b3a41a5aced9f56
+      internalID: 1331090444
       vertices: []
       indices: 
       edges: []
       weights: []
-    outline:
-    - - {x: -212, y: 10}
-      - {x: -212, y: 116}
-      - {x: 226, y: 116}
-      - {x: 225, y: 9}
+    outline: []
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      exit 1_0: -1585730642
-      exit 1_1: 33842049
+      fullscreen a_1: 1331090444
+      fullscreen a_0: 1351964793
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
