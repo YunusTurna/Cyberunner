@@ -15,7 +15,7 @@ public class Fireball : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         target = new Vector2(player.position.x, player.position.y);
-
+        Destroy(gameObject, 5f);
         rb = GetComponent<Rigidbody2D>();
         speed = 3f;
     }
