@@ -6,6 +6,7 @@ public class PlayerAnim : MonoBehaviour
 {
     Animator anim;
     Rigidbody2D rb;
+    public static bool destroy;
     [SerializeField] GameObject deadScene;
     [SerializeField] GameObject world;
     private bool grounded = false;
@@ -73,7 +74,8 @@ public class PlayerAnim : MonoBehaviour
             deadScene.SetActive(true);
             world.SetActive(false);
             Cursor.visible = true;
-            
+            Time.timeScale = 0;
+            destroy = true;
         }
     }
 }

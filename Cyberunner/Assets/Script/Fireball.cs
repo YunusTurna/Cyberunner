@@ -23,8 +23,22 @@ public class Fireball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (PlayerAnim.destroy == true)
+        {
+            Destroy(gameObject);
+        }
+        
         player = GameObject.FindGameObjectWithTag("Player").transform;
-        transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+        
+   transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+        
+        
+    
+        
+        
+        
+        
+        
         if (transform.position.x == target.x && transform.position.y == target.y)
         {
             Destroy(gameObject);
