@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public static float jumpPower;
     [SerializeField] private float dashPower;
     [SerializeField] private int dashCoolDown;
+    [SerializeField] GameObject stopScene;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -37,6 +38,12 @@ public class PlayerMovement : MonoBehaviour
        Jump();
        SpriteFlip();
        StartCoroutine(Dash());
+       if(Input.GetKeyDown(KeyCode.Escape))
+       {
+        stopScene.SetActive(true);
+        Time.timeScale = 0;
+
+       }
 
 
 

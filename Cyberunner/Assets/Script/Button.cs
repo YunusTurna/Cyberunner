@@ -24,8 +24,7 @@ public class Button : MonoBehaviour
     }
     public void Jump()
     {
-        if(Coin.coinCounter >= 300)
-        {
+        if(Coin.coinCounter >= 300){
         PlayerMovement.jumpPower = PlayerMovement.jumpPower + 300;
         Coin.coinCounter = Coin.coinCounter - 200;
         }
@@ -103,6 +102,11 @@ public class Button : MonoBehaviour
             Coin.coinCounter = Coin.coinCounter - 300;
         }
        
+    }
+    public void Resume()
+    {
+        Time.timeScale = 1;
+
     }
 
 }
