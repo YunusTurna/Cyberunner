@@ -25,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
         speed = 10;
         dashCoolDown = 3;
         jumpPower = 3000;
-        dashPower = 200;
+        dashPower = 2000;
 
         
     }

@@ -10403,11 +10403,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6482722604054425161, guid: cb4ded7697657e54da719153e8fabcd9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.1
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 6482722604054425161, guid: cb4ded7697657e54da719153e8fabcd9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.4
+      value: 2.8
       objectReference: {fileID: 0}
     - target: {fileID: 6482722604054425161, guid: cb4ded7697657e54da719153e8fabcd9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -60805,6 +60805,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2056774083}
   - component: {fileID: 2056774082}
+  - component: {fileID: 2056774084}
   m_Layer: 0
   m_Name: Cutscene
   m_TagString: Untagged
@@ -60822,10 +60823,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.31557465, y: -0.6705923}
+  m_Offset: {x: -0.24452972, y: 1.6028156}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -60836,7 +60837,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.680313, y: 0.3425579}
+  m_Size: {x: 2.3973846, y: 1.8446312}
   m_EdgeRadius: 0
 --- !u!4 &2056774083
 Transform:
@@ -60853,6 +60854,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2056774084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056774081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15ff90ba3f494a04da189dad1d574244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2061225788 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4183434782371211650, guid: 8b1f69980aba4994aa77ebd57b1fca9d, type: 3}

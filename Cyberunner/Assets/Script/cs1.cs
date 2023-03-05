@@ -22,7 +22,7 @@ public class cs1 : MonoBehaviour
 
         if ((other.gameObject.tag == "Player"))
         {
-            SceneManager.LoadScene("cr1");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
 
