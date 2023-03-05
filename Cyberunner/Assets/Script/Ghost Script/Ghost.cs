@@ -52,14 +52,7 @@ public class Ghost : MonoBehaviour
             }
         }
 
-        if (animok == true)
-        {
-            anime.SetBool("MoveSke", true);
-        }
-        else
-        {
-            anime.SetBool("MoveSke", false);
-        }
+        
 
         Vector3 scale = transform.localScale;
         if (player.transform.position.x > transform.position.x)
