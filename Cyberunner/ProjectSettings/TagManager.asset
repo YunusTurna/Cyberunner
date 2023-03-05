@@ -49,14 +49,26 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: BackBackGround
+    uniqueID: 587054953
+    locked: 0
   - name: BackGround
     uniqueID: 2710366531
     locked: 0
   - name: MiddleBackGround
     uniqueID: 3606924919
     locked: 0
+  - name: MiddleBackFront
+    uniqueID: 4250131891
+    locked: 0
+  - name: BackBackDecoration
+    uniqueID: 140368223
+    locked: 0
   - name: BackDecoration
     uniqueID: 762376671
+    locked: 0
+  - name: BackFrontDecoration
+    uniqueID: 221295975
     locked: 0
   - name: Playable
     uniqueID: 460417149

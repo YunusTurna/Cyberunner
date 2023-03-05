@@ -41,7 +41,7 @@ public class Fireball : MonoBehaviour
 
         void DestroyProjectile()
         {
-            Destroy(gameObject);
+            Destroy(gameObject , 3f);
         }
 
     }
