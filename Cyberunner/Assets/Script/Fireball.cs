@@ -5,6 +5,7 @@ using UnityEngine;
 public class Fireball : MonoBehaviour
 {
     private Transform player;
+    
     private Vector2 target;
     public float speed;
     Rigidbody2D rb;
