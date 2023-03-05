@@ -65,7 +65,8 @@ public class PlayerAnim : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.tag == "Fireball"){
+        if(other.gameObject.tag == "Fireball")
+        {
             anim.SetBool("Dead" , true);
         }
     }

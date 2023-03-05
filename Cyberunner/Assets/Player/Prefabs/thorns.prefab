@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6757222852671897801}
   m_Layer: 0
   m_Name: thorns
-  m_TagString: thorn
+  m_TagString: Fireball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,10 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9172a135316288443832c06f15d61d58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _waypoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  _waypoints: []
   _speed: 1
   _checkDistance: 0.05
 --- !u!60 &6757222852671897801

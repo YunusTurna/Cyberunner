@@ -28,8 +28,10 @@ public class Wizard : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         InvokeRepeating("Attack", 0, 2);
+        InvokeRepeating("AttackTrue" , 0 , 2);
         playerPos = player.GetComponent<Transform>();
         currenPos = GetComponent<Transform>().position;
+        distance = 5;
 
     }
 
@@ -39,9 +41,15 @@ public class Wizard : MonoBehaviour
     private void Update()
     {
 
-        if (Vector2.Distance(transform.position, playerPos.position) < distance)
+        if (Mathf.Abs(player.transform.position.x - transform.position.x) < 5  & Mathf.Abs(player.transform.position.y - transform.position.y) < 5)
         {
-            attack = true;
+            if(attack == true)
+            {
+                Attack();
+
+            }
+            
+            attack = false;
         }
         else
         {
@@ -88,11 +96,16 @@ public class Wizard : MonoBehaviour
         {
             anim.SetBool("IsAttack", true);
             Instantiate(fireBall, transform.position, Quaternion.Euler(0, 0, 0));
+            attack = false;
+            
         }
         else
         {
             anim.SetBool("IsAttack", false);
         }
+    }
+    void AttackTrue(){
+        attack = true;
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
