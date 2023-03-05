@@ -19,22 +19,24 @@ public class Button : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Coin.coinCounter > 200)
-        {
-
-        }
+        
 
     }
     public void Jump()
     {
+        if(Coin.coinCounter >= 300)
+        {
         PlayerMovement.jumpPower = PlayerMovement.jumpPower + 300;
         Coin.coinCounter = Coin.coinCounter - 200;
+        }
 
     }
     public void Speed()
     {
+        if(Coin.coinCounter >= 300){
         PlayerMovement.speed = PlayerMovement.speed + 3;
         Coin.coinCounter = Coin.coinCounter - 300;
+        }
 
     }
     
