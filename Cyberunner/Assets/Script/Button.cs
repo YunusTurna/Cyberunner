@@ -10,6 +10,7 @@ public class Button : MonoBehaviour
     [SerializeField] GameObject deadScene;
     [SerializeField] GameObject spawnPosition;
     AudioSource au;
+    bool isMute;
     private int SoundSetting;
     void Start()
     {
@@ -75,9 +76,10 @@ public class Button : MonoBehaviour
     }
     public void Sound()
     {
-        
-            au.mute = !au.mute;
-        
+
+        isMute = !isMute;
+     AudioListener.volume = isMute ? 0 : 1;
+
     }
     public void FullScreen()
     {
