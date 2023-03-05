@@ -6,6 +6,8 @@ public class PlayerAnim : MonoBehaviour
 {
     Animator anim;
     Rigidbody2D rb;
+    [SerializeField] GameObject deadScene;
+    [SerializeField] GameObject world;
     private bool grounded = false;
     void Start()
     {
@@ -68,6 +70,10 @@ public class PlayerAnim : MonoBehaviour
         if(other.gameObject.tag == "Fireball")
         {
             anim.SetBool("Dead" , true);
+            deadScene.SetActive(true);
+            world.SetActive(false);
+            Cursor.visible = true;
+            
         }
     }
 }

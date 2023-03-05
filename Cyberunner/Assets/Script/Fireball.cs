@@ -8,6 +8,7 @@ public class Fireball : MonoBehaviour
     private Vector2 target;
     public float speed;
     Rigidbody2D rb;
+    
 
     void Start()
     {
@@ -21,6 +22,7 @@ public class Fireball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
         if (transform.position.x == target.x && transform.position.y == target.y)
         {

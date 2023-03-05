@@ -7,6 +7,8 @@ public class Button : MonoBehaviour
 {
     [SerializeField] GameObject world;
     [SerializeField] GameObject market;
+    [SerializeField] GameObject deadScene;
+    [SerializeField] GameObject spawnPosition;
     AudioSource au;
     private int SoundSetting;
     void Start()
@@ -29,6 +31,19 @@ public class Button : MonoBehaviour
     {
         PlayerMovement.speed = PlayerMovement.speed + 3;
         Coin.coinCounter = Coin.coinCounter - 300;
+
+    }
+    
+    public void Shrouiken()
+    {
+        if(Shuriken_Script.shurikenwait > 0)
+        {
+            
+            Shuriken_Script.shurikenwait -= 1;
+            Coin.coinCounter = Coin.coinCounter - 400;
+
+        }
+        
 
     }
     public void NextLevel(){
@@ -61,6 +76,16 @@ public class Button : MonoBehaviour
     public void FullScreen()
     {
         Screen.fullScreen = !Screen.fullScreen;
+    }
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+    public void Revive()
+    {
+        deadScene.SetActive(false);
+        world.SetActive(true);
+        GameObject.FindGameObjectWithTag("Player").transform.position = new Vector3(spawnPosition.transform.position.x, spawnPosition.transform.position.y , spawnPosition.transform.position.y);
     }
 
 }

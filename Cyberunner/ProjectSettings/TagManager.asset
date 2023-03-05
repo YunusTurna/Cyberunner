@@ -13,6 +13,7 @@ TagManager:
   - thorn
   - Key
   - Cutsene
+  - Dead
   layers:
   - Default
   - TransparentFX
